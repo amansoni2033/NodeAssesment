@@ -14,7 +14,7 @@ const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = SIGNING_KEY;
 
-const PORT = 3100;
+const PORT = 3004;
 const app = express();
 
 passport.use(

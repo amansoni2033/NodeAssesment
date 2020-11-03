@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const SIGNING_KEY = "amanasonithinksys";
+const SIGNING_KEY = "slkdjflwajflkwjaflkjwalfkj";
 
 function generateJWT(payload) {
   return jwt.sign(payload, SIGNING_KEY, { expiresIn: "1d" });

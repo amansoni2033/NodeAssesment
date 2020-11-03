@@ -14,11 +14,11 @@ module.exports = function (sequelize) {
         allowNull: false,
         type: DataTypes.STRING(100),
       },
-      description: {
+      language: {
+        defaultValue: "language",
         allowNull: false,
         type: DataTypes.STRING(100),
       },
-      
     },
     { timestamps: false }
   );

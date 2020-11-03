@@ -28,6 +28,8 @@ module.exports = function (sequelize) {
       password: {
         allowNull: false,
         type: DataTypes.STRING(100),
+      
+        
       },
     },
     { timestamps: false }

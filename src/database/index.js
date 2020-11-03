@@ -3,14 +3,14 @@ const { Sequelize, DataTypes } = require("sequelize");
 const sequelize = new Sequelize({
   dialect: "postgres",
   host: "localhost",
-  port: 3000,
-  username: "Aman_Db",
+  port: 5432,
+  username: "postgres",
   password: "amanabes",
-  database: "application",
+  database: "blog-app",
   sync: true,
 });
 
-const blogs = require("./models/blog")(sequelize);
+const movies = require("./models/blogs")(sequelize);
 const users = require("./models/users")(sequelize);
 
 const init = async function () {
@@ -25,6 +25,5 @@ const init = async function () {
 module.exports = {
   init,
   users,
-  blogs,
   sequelize,
 };
