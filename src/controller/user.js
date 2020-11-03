@@ -1,4 +1,4 @@
-const { sequelize } = require("../db/index");
+const { sequelize } = require("../database/index");
 const md5 = require("md5");
 
 function Init(app) {
@@ -47,7 +47,7 @@ function Init(app) {
     user.first_name = first_name ? first_name : user.first_name;
     user.last_name = last_name ? last_name : user.last_name;
     user.email = email ? email : user.email;
-    // // the name is still "Jane" in the database
+
     await user.save();
 
     const { password: dbPassword, ...sanitizedUser } = JSON.parse(

@@ -1,4 +1,4 @@
-const { sequelize } = require("../db/index");
+const { sequelize } = require("../database/index");
 const md5 = require("md5");
 const { generateJWT, sanitizeUser } = require("../utility");
 const passport = require("passport");

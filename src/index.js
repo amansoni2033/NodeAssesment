@@ -4,7 +4,7 @@ const passport = require("passport");
 const movieController = require("./controller/blog");
 const userController = require("./controller/user");
 const authController = require("./controller/auth");
-const db = require("./db/index");
+const db = require("./database/index");
 const { SIGNING_KEY, sanitizeUser } = require("./utility");
 
 const JwtStrategy = require("passport-jwt").Strategy,

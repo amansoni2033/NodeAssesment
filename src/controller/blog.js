@@ -1,4 +1,4 @@
-const { sequelize } = require("../db/index");
+const { sequelize } = require("../database/index");
 const passport = require('passport');
 
 function Init(app) {
