@@ -10,7 +10,7 @@ const sequelize = new Sequelize({
   sync: true,
 });
 
-const movies = require("./models/blogs")(sequelize);
+const blogs = require("./models/blogs")(sequelize);
 const users = require("./models/users")(sequelize);
 
 const init = async function () {
